@@ -1,7 +1,7 @@
 {
   "name": "@hacxy/changelogithub",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@9.11.0",
   "description": "Generate changelog for GitHub.",
   "author": "hacxy",
