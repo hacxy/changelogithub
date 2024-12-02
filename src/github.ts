@@ -70,7 +70,7 @@ export async function resolveAuthorInfo(options: ChangelogOptions, info: AuthorI
     })
     info.login = data.items[0].login
   }
-  catch {}
+  catch { }
 
   if (info.login)
     return info
@@ -82,7 +82,7 @@ export async function resolveAuthorInfo(options: ChangelogOptions, info: AuthorI
       })
       info.login = data.author.login
     }
-    catch {}
+    catch { }
   }
 
   return info
@@ -91,6 +91,7 @@ export async function resolveAuthorInfo(options: ChangelogOptions, info: AuthorI
 export async function resolveAuthors(commits: Commit[], options: ChangelogOptions) {
   const map = new Map<string, AuthorInfo>()
   commits.forEach((commit) => {
+    console.log(commit.authors)
     commit.resolvedAuthors = commit.authors.map((a, idx) => {
       if (!a.email || !a.name)
         return null

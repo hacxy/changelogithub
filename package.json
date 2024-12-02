@@ -1,10 +1,13 @@
 {
-  "name": "changelogithub",
+  "name": "@hacxy/changelogithub",
   "type": "module",
-  "version": "0.13.11",
+  "version": "0.0.0",
   "packageManager": "pnpm@9.11.0",
   "description": "Generate changelog for GitHub.",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "hacxy",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "funding": "https://github.com/sponsors/antfu",
   "homepage": "https://github.com/antfu/changelogithub#readme",
